@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/epics-modules/xxx/!svn/ver/942/trunk/xxxApp/op/ui
+END
+Security_Control.ui
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/epics-modules/xxx/!svn/ver/853/trunk/xxxApp/op/ui/Security_Control.ui
+END
+xxx.ui
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/epics-modules/xxx/!svn/ver/942/trunk/xxxApp/op/ui/xxx.ui
+END

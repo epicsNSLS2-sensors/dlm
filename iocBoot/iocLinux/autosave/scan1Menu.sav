@@ -1,0 +1,367 @@
+# autosave R5.3	Automatically generated - DO NOT MODIFY - 160711-031714
+dlm:scan1Menu:currName defaultConfig
+dlm:scan1Menu:currDesc 
+dlm:scan2.ATIME 0
+dlm:scan2.COPYTO 0
+dlm:scan2.FLNK 0
+dlm:scan2.NPTS 26
+dlm:scan2.ACQT 0
+dlm:scan2.ACQM 0
+dlm:scan2.PASM 2
+dlm:scan2.BSPV 
+dlm:scan2.BSCD 1
+dlm:scan2.BSWAIT 0
+dlm:scan2.ASPV 
+dlm:scan2.ASCD 1
+dlm:scan2.ASWAIT 0
+dlm:scan2.T1PV dlm:scan1.EXSC
+dlm:scan2.T1CD 1
+dlm:scan2.T2PV 
+dlm:scan2.T2CD 1
+dlm:scan2.T3PV 
+dlm:scan2.T3CD 1
+dlm:scan2.T4PV 
+dlm:scan2.T4CD 1
+dlm:scan2.P1PV 7idc1:DG1:ADelayAO
+dlm:scan2.R1PV 7idc1:DG1:ADelayAO
+dlm:scan2.P1SM 0
+dlm:scan2.P1SP 0
+dlm:scan2.P1EP 2.5e-08
+dlm:scan2.P1AR 1
+dlm:scan2.P2PV 
+dlm:scan2.R2PV 
+dlm:scan2.P2SM 0
+dlm:scan2.P2SP 0
+dlm:scan2.P2EP 0
+dlm:scan2.P2AR 0
+dlm:scan2.P3PV 
+dlm:scan2.R3PV 
+dlm:scan2.P3SM 0
+dlm:scan2.P3SP 0
+dlm:scan2.P3EP 0
+dlm:scan2.P3AR 0
+dlm:scan2.P4PV 
+dlm:scan2.R4PV 
+dlm:scan2.P4SM 0
+dlm:scan2.P4SP 0
+dlm:scan2.P4EP 0
+dlm:scan2.P4AR 0
+dlm:scan2.PDLY 0
+dlm:scan2.DDLY 0
+dlm:scan2.REFD 1
+dlm:scan2.AWCT 0
+dlm:scan2.A1PV 
+dlm:scan2.A1CD 1
+dlm:scan2.D01PV 
+dlm:scan2.D02PV 
+dlm:scan2.D03PV 
+dlm:scan2.D04PV 
+dlm:scan2.D05PV 
+dlm:scan2.D06PV 
+dlm:scan2.D07PV 
+dlm:scan2.D08PV 
+dlm:scan2.D09PV 
+dlm:scan2.D10PV 
+dlm:scan2.D11PV 
+dlm:scan2.D12PV 
+dlm:scan2.D13PV 
+dlm:scan2.D14PV 
+dlm:scan2.D15PV 
+dlm:scan2.D16PV 
+dlm:scan2.D17PV 
+dlm:scan2.D18PV 
+dlm:scan2.D19PV 
+dlm:scan2.D20PV 
+dlm:scan2.D21PV 
+dlm:scan2.D22PV 
+dlm:scan2.D23PV 
+dlm:scan2.D24PV 
+dlm:scan2.D25PV 
+dlm:scan2.D26PV 
+dlm:scan2.D27PV 
+dlm:scan2.D28PV 
+dlm:scan2.D29PV 
+dlm:scan2.D30PV 
+dlm:scan2.D31PV 
+dlm:scan2.D32PV 
+dlm:scan2.D33PV 
+dlm:scan2.D34PV 
+dlm:scan2.D35PV 
+dlm:scan2.D36PV 
+dlm:scan2.D37PV 
+dlm:scan2.D38PV 
+dlm:scan2.D39PV 
+dlm:scan2.D40PV 
+dlm:scan2.D41PV 
+dlm:scan2.D42PV 
+dlm:scan2.D43PV 
+dlm:scan2.D44PV 
+dlm:scan2.D45PV 
+dlm:scan2.D46PV 
+dlm:scan2.D47PV 
+dlm:scan2.D48PV 
+dlm:scan2.D49PV 
+dlm:scan2.D50PV 
+dlm:scan2.D51PV 
+dlm:scan2.D52PV 
+dlm:scan2.D53PV 
+dlm:scan2.D54PV 
+dlm:scan2.D55PV 
+dlm:scan2.D56PV 
+dlm:scan2.D57PV 
+dlm:scan2.D58PV 
+dlm:scan2.D59PV 
+dlm:scan2.D60PV 
+dlm:scan2.D61PV 
+dlm:scan2.D62PV 
+dlm:scan2.D63PV 
+dlm:scan2.D64PV 
+dlm:scan2.D65PV 
+dlm:scan2.D66PV 
+dlm:scan2.D67PV 
+dlm:scan2.D68PV 
+dlm:scan2.D69PV 
+dlm:scan2.D70PV 
+dlm:scan1.ATIME 0
+dlm:scan1.COPYTO 0
+dlm:scan1.FLNK 0
+dlm:scan1.NPTS 10
+dlm:scan1.ACQT 0
+dlm:scan1.ACQM 0
+dlm:scan1.PASM 2
+dlm:scan1.BSPV 
+dlm:scan1.BSCD 1
+dlm:scan1.BSWAIT 0
+dlm:scan1.ASPV 
+dlm:scan1.ASCD 1
+dlm:scan1.ASWAIT 0
+dlm:scan1.T1PV dlm:scanH.EXSC
+dlm:scan1.T1CD 1
+dlm:scan1.T2PV 
+dlm:scan1.T2CD 1
+dlm:scan1.T3PV 
+dlm:scan1.T3CD 1
+dlm:scan1.T4PV 
+dlm:scan1.T4CD 1
+dlm:scan1.P1PV 
+dlm:scan1.R1PV time
+dlm:scan1.P1SM 0
+dlm:scan1.P1SP -1e-08
+dlm:scan1.P1EP 1e-08
+dlm:scan1.P1AR 1
+dlm:scan1.P2PV 
+dlm:scan1.R2PV 
+dlm:scan1.P2SM 0
+dlm:scan1.P2SP 0
+dlm:scan1.P2EP 0
+dlm:scan1.P2AR 0
+dlm:scan1.P3PV 
+dlm:scan1.R3PV 
+dlm:scan1.P3SM 0
+dlm:scan1.P3SP 0
+dlm:scan1.P3EP 0
+dlm:scan1.P3AR 0
+dlm:scan1.P4PV 
+dlm:scan1.R4PV 
+dlm:scan1.P4SM 0
+dlm:scan1.P4SP 0
+dlm:scan1.P4EP 0
+dlm:scan1.P4AR 0
+dlm:scan1.PDLY 0.1
+dlm:scan1.DDLY 0.1
+dlm:scan1.REFD 1
+dlm:scan1.AWCT 0
+dlm:scan1.A1PV 
+dlm:scan1.A1CD 1
+dlm:scan1.D01PV 
+dlm:scan1.D02PV 
+dlm:scan1.D03PV 
+dlm:scan1.D04PV 
+dlm:scan1.D05PV 
+dlm:scan1.D06PV 
+dlm:scan1.D07PV 
+dlm:scan1.D08PV 
+dlm:scan1.D09PV 
+dlm:scan1.D10PV 
+dlm:scan1.D11PV 
+dlm:scan1.D12PV 
+dlm:scan1.D13PV 
+dlm:scan1.D14PV 
+dlm:scan1.D15PV 
+dlm:scan1.D16PV 
+dlm:scan1.D17PV 
+dlm:scan1.D18PV 
+dlm:scan1.D19PV 
+dlm:scan1.D20PV 
+dlm:scan1.D21PV 
+dlm:scan1.D22PV 
+dlm:scan1.D23PV 
+dlm:scan1.D24PV 
+dlm:scan1.D25PV 
+dlm:scan1.D26PV 
+dlm:scan1.D27PV 
+dlm:scan1.D28PV 
+dlm:scan1.D29PV 
+dlm:scan1.D30PV 
+dlm:scan1.D31PV 
+dlm:scan1.D32PV 
+dlm:scan1.D33PV 
+dlm:scan1.D34PV 
+dlm:scan1.D35PV 
+dlm:scan1.D36PV 
+dlm:scan1.D37PV 
+dlm:scan1.D38PV 
+dlm:scan1.D39PV 
+dlm:scan1.D40PV 
+dlm:scan1.D41PV 
+dlm:scan1.D42PV 
+dlm:scan1.D43PV 
+dlm:scan1.D44PV 
+dlm:scan1.D45PV 
+dlm:scan1.D46PV 
+dlm:scan1.D47PV 
+dlm:scan1.D48PV 
+dlm:scan1.D49PV 
+dlm:scan1.D50PV 
+dlm:scan1.D51PV 
+dlm:scan1.D52PV 
+dlm:scan1.D53PV 
+dlm:scan1.D54PV 
+dlm:scan1.D55PV 
+dlm:scan1.D56PV 
+dlm:scan1.D57PV 
+dlm:scan1.D58PV 
+dlm:scan1.D59PV 
+dlm:scan1.D60PV 
+dlm:scan1.D61PV 
+dlm:scan1.D62PV 
+dlm:scan1.D63PV 
+dlm:scan1.D64PV 
+dlm:scan1.D65PV 
+dlm:scan1.D66PV 
+dlm:scan1.D67PV 
+dlm:scan1.D68PV 
+dlm:scan1.D69PV 
+dlm:scan1.D70PV 
+dlm:scanH.ATIME 0
+dlm:scanH.COPYTO -1
+dlm:scanH.FLNK 0
+dlm:scanH.NPTS 1250000
+dlm:scanH.ACQT 1
+dlm:scanH.ACQM 0
+dlm:scanH.PASM 2
+dlm:scanH.BSPV 
+dlm:scanH.BSCD 1
+dlm:scanH.BSWAIT 0
+dlm:scanH.ASPV 
+dlm:scanH.ASCD 1
+dlm:scanH.ASWAIT 0
+dlm:scanH.T1PV dlm:caputRecorderExecuteMacro
+dlm:scanH.T1CD 1
+dlm:scanH.T2PV 
+dlm:scanH.T2CD 1
+dlm:scanH.T3PV 
+dlm:scanH.T3CD 1
+dlm:scanH.T4PV 
+dlm:scanH.T4CD 1
+dlm:scanH.P1PV 
+dlm:scanH.R1PV 
+dlm:scanH.P1SM 0
+dlm:scanH.P1SP 1.1
+dlm:scanH.P1EP 1
+dlm:scanH.P1AR 1
+dlm:scanH.P2PV 
+dlm:scanH.R2PV 
+dlm:scanH.P2SM 0
+dlm:scanH.P2SP 0
+dlm:scanH.P2EP 0
+dlm:scanH.P2AR 0
+dlm:scanH.P3PV 
+dlm:scanH.R3PV 
+dlm:scanH.P3SM 0
+dlm:scanH.P3SP 0
+dlm:scanH.P3EP 0
+dlm:scanH.P3AR 0
+dlm:scanH.P4PV 
+dlm:scanH.R4PV 
+dlm:scanH.P4SM 0
+dlm:scanH.P4SP 0
+dlm:scanH.P4EP 0
+dlm:scanH.P4AR 0
+dlm:scanH.PDLY 0
+dlm:scanH.DDLY 0
+dlm:scanH.REFD 1
+dlm:scanH.AWCT 0
+dlm:scanH.A1PV 
+dlm:scanH.A1CD 1
+dlm:scanH.D01PV dlm:dlm:acalc1.AVAL
+dlm:scanH.D02PV dlm:dlm:acalc2.AVAL
+dlm:scanH.D03PV 
+dlm:scanH.D04PV 
+dlm:scanH.D05PV 
+dlm:scanH.D06PV 
+dlm:scanH.D07PV 
+dlm:scanH.D08PV 
+dlm:scanH.D09PV 
+dlm:scanH.D10PV 
+dlm:scanH.D11PV 
+dlm:scanH.D12PV 
+dlm:scanH.D13PV 
+dlm:scanH.D14PV 
+dlm:scanH.D15PV 
+dlm:scanH.D16PV 
+dlm:scanH.D17PV 
+dlm:scanH.D18PV 
+dlm:scanH.D19PV 
+dlm:scanH.D20PV 
+dlm:scanH.D21PV 
+dlm:scanH.D22PV 
+dlm:scanH.D23PV 
+dlm:scanH.D24PV 
+dlm:scanH.D25PV 
+dlm:scanH.D26PV 
+dlm:scanH.D27PV 
+dlm:scanH.D28PV 
+dlm:scanH.D29PV 
+dlm:scanH.D30PV 
+dlm:scanH.D31PV 
+dlm:scanH.D32PV 
+dlm:scanH.D33PV 
+dlm:scanH.D34PV 
+dlm:scanH.D35PV 
+dlm:scanH.D36PV 
+dlm:scanH.D37PV 
+dlm:scanH.D38PV 
+dlm:scanH.D39PV 
+dlm:scanH.D40PV 
+dlm:scanH.D41PV 
+dlm:scanH.D42PV 
+dlm:scanH.D43PV 
+dlm:scanH.D44PV 
+dlm:scanH.D45PV 
+dlm:scanH.D46PV 
+dlm:scanH.D47PV 
+dlm:scanH.D48PV 
+dlm:scanH.D49PV 
+dlm:scanH.D50PV 
+dlm:scanH.D51PV 
+dlm:scanH.D52PV 
+dlm:scanH.D53PV 
+dlm:scanH.D54PV 
+dlm:scanH.D55PV 
+dlm:scanH.D56PV 
+dlm:scanH.D57PV 
+dlm:scanH.D58PV 
+dlm:scanH.D59PV 
+dlm:scanH.D60PV 
+dlm:scanH.D61PV 
+dlm:scanH.D62PV 
+dlm:scanH.D63PV 
+dlm:scanH.D64PV 
+dlm:scanH.D65PV 
+dlm:scanH.D66PV 
+dlm:scanH.D67PV 
+dlm:scanH.D68PV 
+dlm:scanH.D69PV 
+dlm:scanH.D70PV 
+<END>

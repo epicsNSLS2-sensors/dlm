@@ -1,0 +1,9 @@
+$(P)$(Q)sampleCriterion
+$(P)$(Q)sampleThreshold
+$(P)$(Q)sampleIxLow
+$(P)$(Q)sampleIxHigh
+$(P)$(Q)histogram
+$(P)$(Q)histNumVoltBins
+$(P)$(Q)histVoltsLow
+$(P)$(Q)histVoltsHigh
+file acalcout_settings.req P=$(P)$(Q)acalcDebug

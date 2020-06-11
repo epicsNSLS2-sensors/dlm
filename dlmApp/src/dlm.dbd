@@ -1,0 +1,2 @@
+registrar(dlmRegister)
+variable(dlmDebug, int)

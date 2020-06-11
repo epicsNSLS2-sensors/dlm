@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/epics-modules/xxx/!svn/ver/936/trunk/configure
+END
+RELEASE
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/epics-modules/xxx/!svn/ver/936/trunk/configure/RELEASE
+END
+RULES.ioc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/epics-modules/xxx/!svn/ver/496/trunk/configure/RULES.ioc
+END
+CONFIG
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/epics-modules/xxx/!svn/ver/795/trunk/configure/CONFIG
+END
+CONFIG_SITE
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/epics-modules/xxx/!svn/ver/893/trunk/configure/CONFIG_SITE
+END
+RULES
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/epics-modules/xxx/!svn/ver/496/trunk/configure/RULES
+END
+RULES_DIRS
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/epics-modules/xxx/!svn/ver/496/trunk/configure/RULES_DIRS
+END
+RULES_TOP
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/epics-modules/xxx/!svn/ver/496/trunk/configure/RULES_TOP
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/epics-modules/xxx/!svn/ver/713/trunk/configure/Makefile
+END

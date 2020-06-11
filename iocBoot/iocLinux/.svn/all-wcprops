@@ -1,0 +1,185 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/epics-modules/xxx/!svn/ver/1060/trunk/iocBoot/iocLinux
+END
+asynRecord_settings.req
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/epics-modules/xxx/!svn/ver/841/trunk/iocBoot/iocLinux/asynRecord_settings.req
+END
+scan1Menu.req
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/epics-modules/xxx/!svn/ver/768/trunk/iocBoot/iocLinux/scan1Menu.req
+END
+serial.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/epics-modules/xxx/!svn/ver/879/trunk/iocBoot/iocLinux/serial.cmd
+END
+filter.substitutions
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/epics-modules/xxx/!svn/ver/766/trunk/iocBoot/iocLinux/filter.substitutions
+END
+scanParms.substitutions
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/epics-modules/xxx/!svn/ver/629/trunk/iocBoot/iocLinux/scanParms.substitutions
+END
+fb_epid.substitutions
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/epics-modules/xxx/!svn/ver/711/trunk/iocBoot/iocLinux/fb_epid.substitutions
+END
+st.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/epics-modules/xxx/!svn/ver/945/trunk/iocBoot/iocLinux/st.cmd
+END
+softMotor.substitutions
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/epics-modules/xxx/!svn/ver/295/trunk/iocBoot/iocLinux/softMotor.substitutions
+END
+softGlue.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/epics-modules/xxx/!svn/ver/851/trunk/iocBoot/iocLinux/softGlue.cmd
+END
+in-screen.sh
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/epics-modules/xxx/!svn/ver/786/trunk/iocBoot/iocLinux/in-screen.sh
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/epics-modules/xxx/!svn/ver/245/trunk/iocBoot/iocLinux/README
+END
+motor.substitutions
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/epics-modules/xxx/!svn/ver/550/trunk/iocBoot/iocLinux/motor.substitutions
+END
+canberra_1.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/epics-modules/xxx/!svn/ver/295/trunk/iocBoot/iocLinux/canberra_1.cmd
+END
+xxx.sh
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/epics-modules/xxx/!svn/ver/944/trunk/iocBoot/iocLinux/xxx.sh
+END
+save_restore.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/epics-modules/xxx/!svn/ver/888/trunk/iocBoot/iocLinux/save_restore.cmd
+END
+calc.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/epics-modules/xxx/!svn/ver/1060/trunk/iocBoot/iocLinux/calc.cmd
+END
+areaDetector.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/epics-modules/xxx/!svn/ver/896/trunk/iocBoot/iocLinux/areaDetector.cmd
+END
+run
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/epics-modules/xxx/!svn/ver/786/trunk/iocBoot/iocLinux/run
+END
+auto_positions.req
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/epics-modules/xxx/!svn/ver/832/trunk/iocBoot/iocLinux/auto_positions.req
+END
+motorSim.substitutions
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/epics-modules/xxx/!svn/ver/738/trunk/iocBoot/iocLinux/motorSim.substitutions
+END
+asynRecord.substitutions
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/epics-modules/xxx/!svn/ver/295/trunk/iocBoot/iocLinux/asynRecord.substitutions
+END
+softScaler.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/epics-modules/xxx/!svn/ver/846/trunk/iocBoot/iocLinux/softScaler.cmd
+END
+orient_xtals.substitutions
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/epics-modules/xxx/!svn/ver/315/trunk/iocBoot/iocLinux/orient_xtals.substitutions
+END
+motorSim.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/epics-modules/xxx/!svn/ver/737/trunk/iocBoot/iocLinux/motorSim.cmd
+END
+async_pid_slow.substitutions
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/epics-modules/xxx/!svn/ver/767/trunk/iocBoot/iocLinux/async_pid_slow.substitutions
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/epics-modules/xxx/!svn/ver/551/trunk/iocBoot/iocLinux/Makefile
+END
+auto_settings.req
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/epics-modules/xxx/!svn/ver/833/trunk/iocBoot/iocLinux/auto_settings.req
+END
+pid_slow.substitutions
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/epics-modules/xxx/!svn/ver/295/trunk/iocBoot/iocLinux/pid_slow.substitutions
+END
+pseudoMotor.substitutions
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/epics-modules/xxx/!svn/ver/828/trunk/iocBoot/iocLinux/pseudoMotor.substitutions
+END
+saveData.req
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/epics-modules/xxx/!svn/ver/829/trunk/iocBoot/iocLinux/saveData.req
+END

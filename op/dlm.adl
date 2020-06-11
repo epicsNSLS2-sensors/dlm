@@ -1,0 +1,294 @@
+
+file {
+	name="/home/oxygen4/MOONEY/epics/dlm/dlm/dlmApp/op/adl/dlm.adl"
+	version=030107
+}
+display {
+	object {
+		x=1183
+		y=25
+		width=140
+		height=65
+	}
+	clr=64
+	bclr=1
+	cmap=""
+	gridSpacing=10
+	gridOn=0
+	snapToGrid=1
+}
+"color map" {
+	ncolors=65
+	colors {
+		ffffff,
+		ececec,
+		dadada,
+		c8c8c8,
+		bbbbbb,
+		aeaeae,
+		9e9e9e,
+		919191,
+		858585,
+		787878,
+		696969,
+		5a5a5a,
+		464646,
+		2d2d2d,
+		000000,
+		00d800,
+		1ebb00,
+		339900,
+		2d7f00,
+		216c00,
+		fd0000,
+		de1309,
+		be190b,
+		a01207,
+		820400,
+		5893ff,
+		597ee1,
+		4b6ec7,
+		3a5eab,
+		27548d,
+		fbf34a,
+		f9da3c,
+		eeb62b,
+		e19015,
+		cd6100,
+		ffb0ff,
+		d67fe2,
+		ae4ebc,
+		8b1a96,
+		610a75,
+		a4aaff,
+		8793e2,
+		6a73c1,
+		4d52a4,
+		343386,
+		c7bb6d,
+		b79d5c,
+		a47e3c,
+		7d5627,
+		58340f,
+		99ffff,
+		73dfff,
+		4ea5f9,
+		2a63e4,
+		0a00b8,
+		ebf1b5,
+		d4db9d,
+		bbc187,
+		a6a462,
+		8b8239,
+		73ff6b,
+		52da3b,
+		3cb420,
+		289315,
+		1a7309,
+	}
+}
+"related display" {
+	object {
+		x=0
+		y=0
+		width=70
+		height=20
+	}
+	display[0] {
+		label="Scan1 (for all scans)"
+		name="scan.adl"
+		args="P=dlm:,N=1,S=scan1"
+	}
+	display[1] {
+		label="Scan2 (for 2D & higher scans)"
+		name="scan.adl"
+		args="P=dlm:,N=2,S=scan2"
+	}
+	display[2] {
+		label="Scan3 (for 3D & higher scans)"
+		name="scan.adl"
+		args="P=dlm:,N=3,S=scan3"
+	}
+	display[3] {
+		label="Scan4 (for 4D scans)"
+		name="scan.adl"
+		args="P=dlm:,N=4,S=scan4"
+	}
+	display[4] {
+		label="ScanH (for Hardware-assisted scans)"
+		name="scan.adl"
+		args="P=dlm:,N=H,S=scanH"
+	}
+	display[5] {
+		label="test scanParms2Pos"
+		name="scanParms2Pos.adl"
+		args="P=dlm:,Q=m7_8,SCAN=dlm:scan1,PV1=dlm:m7,PV2=dlm:m8"
+	}
+	display[7] {
+		label="saveData controls"
+		name="scan_saveData.adl"
+		args="P=dlm:"
+	}
+	display[9] {
+		label="aux scan"
+		name="scanAux.adl"
+		args="P=dlm:,S=scanAux"
+	}
+	display[11] {
+		label="scanProgress"
+		name="ProgressBar.adl"
+		args="P=dlm:,B=dlm:scanProgress:"
+	}
+	display[14] {
+		label="scan1Menu"
+		name="configMenu.adl"
+		args="P=dlm:,CONFIG=scan1"
+	}
+	clr=0
+	bclr=17
+	label="-Scan"
+}
+"related display" {
+	object {
+		x=0
+		y=40
+		width=70
+		height=20
+	}
+	display[0] {
+		label="IOC Status soft ioc"
+		name="ioc_stats_soft.adl"
+		args="ioc=dlm"
+	}
+	display[2] {
+		label="save_restore Status"
+		name="save_restoreStatus.adl"
+		args="P=dlm:"
+	}
+	clr=0
+	bclr=17
+	label="-Status"
+}
+"related display" {
+	object {
+		x=70
+		y=0
+		width=70
+		height=20
+	}
+	display[0] {
+		label="caputRecorder"
+		name="caputRecorder.adl"
+		args="P=dlm:,L=dlm:"
+	}
+	clr=0
+	bclr=17
+	label="-caputRec"
+}
+"related display" {
+	object {
+		x=70
+		y=20
+		width=70
+		height=20
+	}
+	display[0] {
+		label="dlmPlots"
+		name="dlmPlots.adl"
+		args="P=dlm:,Q=dlm:"
+	}
+	clr=0
+	bclr=17
+	label="-DLM4000"
+}
+"related display" {
+	object {
+		x=0
+		y=20
+		width=70
+		height=20
+	}
+	display[0] {
+		label="user calcs 1-10"
+		name="userCalcs10.adl"
+		args="P=dlm:"
+	}
+	display[1] {
+		label="user stringCalcs 1-10"
+		name="userStringCalcs10.adl"
+		args="P=dlm:"
+	}
+	display[2] {
+		label="user transforms 1-10"
+		name="userTransforms10.adl"
+		args="P=dlm:"
+	}
+	display[3] {
+		label="user string seqs 1-10"
+		name="userStringSeqs10.adl"
+		args="P=dlm:"
+	}
+	display[4] {
+		label="user arrayCalcs 1-10"
+		name="userArrayCalcs10.adl"
+		args="P=dlm:"
+	}
+	display[5] {
+		label="user average 1-10"
+		name="userAve10.adl"
+		args="P=dlm:"
+	}
+	display[6] {
+		label="user calcOuts 1-10"
+		name="userCalcOuts10.adl"
+		args="P=dlm:"
+	}
+	display[7] {
+		label="user stringCalcs 11-20"
+		name="userStringCalcs10more.adl"
+		args="P=dlm:,N1=11,N2=12,N3=13,N4=14,N5=15,N6=16,N7=17,N8=18,N9=19,N10=20"
+	}
+	display[8] {
+		label="user transforms 11-20"
+		name="userTransforms10more.adl"
+		args="P=dlm:,N1=11,N2=12,N3=13,N4=14,N5=15,N6=16,N7=17,N8=18,N9=19,N10=20"
+	}
+	display[9] {
+		label="user string seqs 11-20"
+		name="userStringSeqs10more.adl"
+		args="P=dlm:,N1=11,N2=12,N3=13,N4=14,N5=15,N6=16,N7=17,N8=18,N9=19,N10=20"
+	}
+	display[10] {
+		label="user arrayCalcs 11-20"
+		name="userArrayCalcs10more.adl"
+		args="P=dlm:,N1=11,N2=12,N3=13,N4=14,N5=15,N6=16,N7=17,N8=18,N9=19,N10=20"
+	}
+	display[11] {
+		label="user average 11-20"
+		name="userAve10more.adl"
+		args="P=dlm:,N1=11,N2=12,N3=13,N4=14,N5=15,N6=16,N7=17,N8=18,N9=19,N10=20"
+	}
+	display[12] {
+		label="user calcOuts 11-20"
+		name="userCalcOuts10more.adl"
+		args="P=dlm:,N1=11,N2=12,N3=13,N4=14,N5=15,N6=16,N7=17,N8=18,N9=19,N10=20"
+	}
+	display[13] {
+		label="user calcs 11-20"
+		name="userCalcs10more.adl"
+		args="P=dlm:,N1=11,N2=12,N3=13,N4=14,N5=15,N6=16,N7=17,N8=18,N9=19,N10=20"
+	}
+	display[14] {
+		label="busyRecord"
+		name="xxBusyRecord.adl"
+		args="P=dlm:,R=mybusy"
+	}
+	display[15] {
+		label="global enable"
+		name="userCalcsGlobalEnable.adl"
+		args="P=dlm:"
+	}
+	clr=0
+	bclr=17
+	label="-userCalc"
+}

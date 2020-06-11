@@ -1,0 +1,8 @@
+#!/bin/bash
+export EPICS_CA_AUTO_ADDR_LIST="NO"
+#export EPICS_CA_ADDR_LIST="192.168.0.255"
+export EPICS_CA_ADDR_LIST="localhost"
+export EPICS_DISPLAY_PATH="/usr/local/epics/synApps_5_8/all_adls:./"
+export EPICS_CA_MAX_ARRAY_BYTES=20000000
+
+medm -x dlm.adl &

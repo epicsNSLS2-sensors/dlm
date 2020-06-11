@@ -1,0 +1,11 @@
+Edit configure/RELEASE to set the variable SUPPORT
+
+Edit iocBoot/ioc*/Makefile to set the variable ARCH
+
+Edit start_epics_dlm, start_caQtDM, and start_putrecorder
+to set the variable EPICS_APP.
+
+Edit start_putrecorder to set the path to a python executable that has pyepics.
+
+Edit iocBoot/iocLinux/dlm4000.cmd to set the IP address of the scope.
+chmod a+w,g+s iocBoot/ioc*/autosave

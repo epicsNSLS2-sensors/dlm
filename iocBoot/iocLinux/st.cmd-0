@@ -1,0 +1,87 @@
+# Linux startup script
+
+##########################  ############################################################################
+# environment variable      description
+##########################  ############################################################################
+# PREFIX		    prefix used for all PVs in this IOC
+# EPICS_DB_INCLUDE_PATH     search path for database files
+# EPICS_CA_MAX_ARRAY_BYTES  Specify largest array CA will transport
+##########################  ############################################################################
+
+epicsEnvSet("PREFIX", "dlm:")
+
+### For devIocStats
+epicsEnvSet("ENGINEER","engineer")
+epicsEnvSet("LOCATION","location")
+epicsEnvSet("GROUP","group")
+epicsEnvSet("EPICS_DB_INCLUDE_PATH", "$(DEVIOCSTATS)/db")
+
+< envPaths
+
+# save_restore.cmd needs the full path to the startup directory, which
+# envPaths currently does not provide
+epicsEnvSet(STARTUP,$(TOP)/iocBoot/$(IOC))
+
+# Increase size of buffer for error logging from default 1256
+errlogInit(20000)
+
+# Specify largest array CA will transport
+# Note for N doubles, need N*8 bytes+some overhead
+#epicsEnvSet EPICS_CA_MAX_ARRAY_BYTES 64010
+epicsEnvSet EPICS_CA_MAX_ARRAY_BYTES 10000100
+
+################################################################################
+# Tell EPICS all about the record types, device-support modules, drivers,
+# etc. in the software we just loaded (dlm.munch)
+dbLoadDatabase("../../dbd/iocdlmLinux.dbd")
+iocdlmLinux_registerRecordDeviceDriver(pdbbase)
+
+### save_restore setup
+< save_restore.cmd
+
+# Access Security - needed by caputRecorder
+dbLoadRecords("$(TOP)/dlmApp/Db/Security_Control.db","P=$(PREFIX)")
+asSetFilename("$(TOP)/iocBoot/accessSecurity.acf")
+asSetSubstitutions("P=$(PREFIX)")
+
+### caputRecorder
+
+# trap listener
+dbLoadRecords("$(CAPUTRECORDER)/caputRecorderApp/Db/caputPoster.db","P=$(PREFIX),N=300")
+doAfterIocInit("registerCaputRecorderTrapListener('dlm:caputRecorderCommand')")
+
+# GUI database
+dbLoadRecords("$(CAPUTRECORDER)/caputRecorderApp/Db/caputRecorder.db","P=$(PREFIX),N=300")
+
+# DLM4000 scope
+< dlm4000.cmd
+
+### Scan-support software
+# crate-resident scan.  This executes 1D, 2D, 3D, and 4D scans, and caches
+# 1D data, but it doesn't store anything to disk.  (See 'saveData' below for that.)
+dbLoadRecords("$(SSCAN)/sscanApp/Db/standardScans.db","P=$(PREFIX),MAXPTS1=4000,MAXPTS2=1000,MAXPTS3=1000,MAXPTS4=1000,MAXPTSH=1250000")
+dbLoadRecords("$(SSCAN)/sscanApp/Db/saveData.db","P=$(PREFIX)")
+# Run this after iocInit:
+doAfterIocInit("saveData_Init(saveData.req, 'P=$(PREFIX)')")
+dbLoadRecords("$(SSCAN)/sscanApp/Db/scanProgress.db","P=$(PREFIX)scanProgress:")
+# Run this after iocInit:
+doAfterIocInit("seq &scanProgress, 'S=$(PREFIX), P=$(PREFIX)scanProgress:'")
+
+
+### Stuff for user programming ###
+< calc.iocsh
+
+# devIocStats
+dbLoadRecords("$(DEVIOCSTATS)/db/iocAdminSoft.db","IOC=dlm")
+
+
+###############################################################################
+iocInit
+###############################################################################
+
+### Report  states of database CA links
+dbcar(*,1)
+
+### print the time our boot was finished
+date
+

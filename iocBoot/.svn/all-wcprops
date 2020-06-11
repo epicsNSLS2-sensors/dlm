@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/epics-modules/xxx/!svn/ver/948/trunk/iocBoot
+END
+accessSecurity.acf
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/epics-modules/xxx/!svn/ver/897/trunk/iocBoot/accessSecurity.acf
+END
+nfsCommands
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/epics-modules/xxx/!svn/ver/907/trunk/iocBoot/nfsCommands
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/epics-modules/xxx/!svn/ver/496/trunk/iocBoot/Makefile
+END

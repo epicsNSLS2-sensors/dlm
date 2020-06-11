@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/epics-modules/xxx/!svn/ver/948/trunk
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/epics-modules/xxx/!svn/ver/947/trunk/LICENSE
+END
+start_epics_xxx.bash
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/epics-modules/xxx/!svn/ver/941/trunk/start_epics_xxx.bash
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/epics-modules/xxx/!svn/ver/947/trunk/.gitignore
+END
+start_caQtDM
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/epics-modules/xxx/!svn/ver/941/trunk/start_caQtDM
+END
+start_epics_xxx
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/epics-modules/xxx/!svn/ver/933/trunk/start_epics_xxx
+END
+.gitattributes
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/epics-modules/xxx/!svn/ver/948/trunk/.gitattributes
+END
+EXAMPLE_start_caQtDM.sh
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/epics-modules/xxx/!svn/ver/925/trunk/EXAMPLE_start_caQtDM.sh
+END
+release.pl
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/epics-modules/xxx/!svn/ver/939/trunk/release.pl
+END
+setup_epics_common
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/epics-modules/xxx/!svn/ver/878/trunk/setup_epics_common
+END
+start_putrecorder
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/epics-modules/xxx/!svn/ver/927/trunk/start_putrecorder
+END
+README.md
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/epics-modules/xxx/!svn/ver/947/trunk/README.md
+END
+start_caQtDM_APSshare
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/epics-modules/xxx/!svn/ver/941/trunk/start_caQtDM_APSshare
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/epics-modules/xxx/!svn/ver/496/trunk/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/epics-modules/xxx/!svn/ver/612/trunk/README
+END

@@ -1,0 +1,72 @@
+[prefix]
+$(P)
+
+[status]
+$(P)saveData_status
+
+[message]
+$(P)saveData_message
+
+[filename]
+$(P)saveData_fileName
+
+[counter]	# scan counter
+$(P)saveData_scanNumber
+
+[fileSystem] # scan file system
+$(P)saveData_fileSystem
+
+[subdir]	# scan file subdirectory
+$(P)saveData_subDir
+
+[basename]	# PV containing the desired data-file base name
+$(P)saveData_baseName
+
+[fullPathName]
+$(P)saveData_fullPathName
+
+[realTime1D] # if nonzero, write 1D data as it comes in
+$(P)saveData_realTime1D
+
+[scanRecord]	# specify scan records to be monitored
+$(P)scanH
+$(P)scan1
+$(P)scan2
+$(P)scan3
+$(P)scan4
+
+[extraPV]
+$(P)saveData_comment1
+$(P)saveData_comment2
+dlm:dlm:scopeTriggerLevel
+dlm:dlm:scopeTriggerSlope
+dlm:dlm:scopeCh1VoltsPerDiv
+dlm:dlm:scopeCh2VoltsPerDiv
+dlm:dlm:scopeCh3VoltsPerDiv
+dlm:dlm:scopeCh4VoltsPerDiv
+dlm:dlm:scopeSampleRate
+dlm:dlm:scopeTimePerDiv
+dlm:dlm:dataAcqTime
+dlm:dlm:totalTime
+dlm:dlm:actualNumAvg
+dlm:dlm:numScopeAvg
+dlm:dlm:sumSub.VALE
+dlm:dlm:nSumElements
+dlm:dlm:numSamples
+dlm:dlm:sampleCriterion
+dlm:dlm:sampleThreshold
+dlm:dlm:sampleIxLow
+dlm:dlm:sampleIxHigh
+dlm:dlm:histogram
+dlm:dlm:histNumVoltBins
+dlm:dlm:histVoltsLow
+dlm:dlm:histVoltsHigh
+dlm:caputRecorderArg1Value
+dlm:caputRecorderArg2Value
+dlm:caputRecorderArg3Value
+dlm:caputRecorderArg4Value
+dlm:caputRecorderArg5Value
+dlm:caputRecorderArg6Value
+dlm:caputRecorderArg7Value
+dlm:caputRecorderArg8Value
+dlm:caputRecorderMacro

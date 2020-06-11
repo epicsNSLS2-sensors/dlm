@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+<class>MainWindow</class>
+<widget class="QMainWindow" name="MainWindow">
+    <property name="geometry">
+        <rect>
+            <x>1183</x>
+            <y>25</y>
+            <width>140</width>
+            <height>65</height>
+        </rect>
+    </property>
+    <property name="styleSheet">
+        <string>
+
+QWidget#centralWidget {background: rgba(236, 236, 236, 255);}
+QPushButton::menu-indicator {image: url(none.png); width: 0}
+
+</string>
+    </property>
+    <widget class="QWidget" name="centralWidget">
+        <widget class="caRelatedDisplay" name="caRelatedDisplay_0">
+            <property name="geometry">
+                <rect>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>70</width>
+                    <height>20</height>
+                </rect>
+            </property>
+            <property name="foreground">
+                <color alpha="255">
+                    <red>255</red>
+                    <green>255</green>
+                    <blue>255</blue>
+                </color>
+            </property>
+            <property name="background">
+                <color alpha="255">
+                    <red>51</red>
+                    <green>153</green>
+                    <blue>0</blue>
+                </color>
+            </property>
+            <property name="label">
+                <string>-Scan</string>
+            </property>
+            <property name="stackingMode">
+                <enum>Menu</enum>
+            </property>
+            <property name="labels">
+                <string>Scan1 (for all scans);Scan2 (for 2D &amp; higher scans);Scan3 (for 3D &amp; higher scans);Scan4 (for 4D scans);ScanH (for Hardware-assisted scans);test scanParms2Pos;saveData controls;aux scan;scanProgress;scan1Menu</string>
+            </property>
+            <property name="files">
+                <string>scan.adl;scan.adl;scan.adl;scan.adl;scan.adl;scanParms2Pos.adl;scan_saveData.adl;scanAux.adl;ProgressBar.adl;configMenu.adl</string>
+            </property>
+            <property name="args">
+                <string>P=dlm:,N=1,S=scan1;P=dlm:,N=2,S=scan2;P=dlm:,N=3,S=scan3;P=dlm:,N=4,S=scan4;P=dlm:,N=H,S=scanH;P=dlm:,Q=m7_8,SCAN=dlm:scan1,PV1=dlm:m7,PV2=dlm:m8;P=dlm:;P=dlm:,S=scanAux;P=dlm:,B=dlm:scanProgress:;P=dlm:,CONFIG=scan1</string>
+            </property>
+            <property name="removeParent">
+                <string>false;false;false;false;false;false;false;false;false;false</string>
+            </property>
+        </widget>
+        <widget class="caRelatedDisplay" name="caRelatedDisplay_1">
+            <property name="geometry">
+                <rect>
+                    <x>0</x>
+                    <y>40</y>
+                    <width>70</width>
+                    <height>20</height>
+                </rect>
+            </property>
+            <property name="foreground">
+                <color alpha="255">
+                    <red>255</red>
+                    <green>255</green>
+                    <blue>255</blue>
+                </color>
+            </property>
+            <property name="background">
+                <color alpha="255">
+                    <red>51</red>
+                    <green>153</green>
+                    <blue>0</blue>
+                </color>
+            </property>
+            <property name="label">
+                <string>-Status</string>
+            </property>
+            <property name="stackingMode">
+                <enum>Menu</enum>
+            </property>
+            <property name="labels">
+                <string>IOC Status soft ioc;IOC Status vxworks ioc;save_restore Status;alive record</string>
+            </property>
+            <property name="files">
+                <string>ioc_stats_soft.adl;ioc_stats_vxworks.adl;save_restoreStatus.adl;aliveRecord.adl</string>
+            </property>
+            <property name="args">
+                <string>ioc=dlm;ioc=dlm;P=dlm:;P=dlm:</string>
+            </property>
+            <property name="removeParent">
+                <string>false;false;false;false</string>
+            </property>
+        </widget>
+        <widget class="caRelatedDisplay" name="caRelatedDisplay_2">
+            <property name="geometry">
+                <rect>
+                    <x>70</x>
+                    <y>0</y>
+                    <width>70</width>
+                    <height>20</height>
+                </rect>
+            </property>
+            <property name="foreground">
+                <color alpha="255">
+                    <red>255</red>
+                    <green>255</green>
+                    <blue>255</blue>
+                </color>
+            </property>
+            <property name="background">
+                <color alpha="255">
+                    <red>51</red>
+                    <green>153</green>
+                    <blue>0</blue>
+                </color>
+            </property>
+            <property name="label">
+                <string>-caputRec</string>
+            </property>
+            <property name="stackingMode">
+                <enum>Menu</enum>
+            </property>
+            <property name="labels">
+                <string>caputRecorder;caputRecorderA</string>
+            </property>
+            <property name="files">
+                <string>caputRecorder.adl;caputRecorder.adl</string>
+            </property>
+            <property name="args">
+                <string>P=dlm:,L=dlm:;P=dlmA:,L=dlm:</string>
+            </property>
+            <property name="removeParent">
+                <string>false;false</string>
+            </property>
+        </widget>
+        <widget class="caRelatedDisplay" name="caRelatedDisplay_3">
+            <property name="geometry">
+                <rect>
+                    <x>70</x>
+                    <y>20</y>
+                    <width>70</width>
+                    <height>20</height>
+                </rect>
+            </property>
+            <property name="foreground">
+                <color alpha="255">
+                    <red>255</red>
+                    <green>255</green>
+                    <blue>255</blue>
+                </color>
+            </property>
+            <property name="background">
+                <color alpha="255">
+                    <red>51</red>
+                    <green>153</green>
+                    <blue>0</blue>
+                </color>
+            </property>
+            <property name="label">
+                <string>-DLM4000</string>
+            </property>
+            <property name="stackingMode">
+                <enum>Menu</enum>
+            </property>
+            <property name="labels">
+                <string>dlmPlots</string>
+            </property>
+            <property name="files">
+                <string>dlmPlots.adl</string>
+            </property>
+            <property name="args">
+                <string>P=dlm:,Q=dlm:</string>
+            </property>
+            <property name="removeParent">
+                <string>false</string>
+            </property>
+        </widget>
+        <widget class="caRelatedDisplay" name="caRelatedDisplay_4">
+            <property name="geometry">
+                <rect>
+                    <x>0</x>
+                    <y>20</y>
+                    <width>70</width>
+                    <height>20</height>
+                </rect>
+            </property>
+            <property name="foreground">
+                <color alpha="255">
+                    <red>255</red>
+                    <green>255</green>
+                    <blue>255</blue>
+                </color>
+            </property>
+            <property name="background">
+                <color alpha="255">
+                    <red>51</red>
+                    <green>153</green>
+                    <blue>0</blue>
+                </color>
+            </property>
+            <property name="label">
+                <string>-userCalc</string>
+            </property>
+            <property name="stackingMode">
+                <enum>Menu</enum>
+            </property>
+            <property name="labels">
+                <string>user calcs 1-10;user stringCalcs 1-10;user transforms 1-10;user string seqs 1-10;user arrayCalcs 1-10;user average 1-10;user calcOuts 1-10;user stringCalcs 11-20;user transforms 11-20;user string seqs 11-20;user arrayCalcs 11-20;user average 11-20;user calcOuts 11-20;user calcs 11-20;busyRecord;global enable</string>
+            </property>
+            <property name="files">
+                <string>userCalcs10.adl;userStringCalcs10.adl;userTransforms10.adl;userStringSeqs10.adl;userArrayCalcs10.adl;userAve10.adl;userCalcOuts10.adl;userStringCalcs10more.adl;userTransforms10more.adl;userStringSeqs10more.adl;userArrayCalcs10more.adl;userAve10more.adl;userCalcOuts10more.adl;userCalcs10more.adl;xxBusyRecord.adl;userCalcsGlobalEnable.adl</string>
+            </property>
+            <property name="args">
+                <string>P=dlm:;P=dlm:;P=dlm:;P=dlm:;P=dlm:;P=dlm:;P=dlm:;P=dlm:,N1=11,N2=12,N3=13,N4=14,N5=15,N6=16,N7=17,N8=18,N9=19,N10=20;P=dlm:,N1=11,N2=12,N3=13,N4=14,N5=15,N6=16,N7=17,N8=18,N9=19,N10=20;P=dlm:,N1=11,N2=12,N3=13,N4=14,N5=15,N6=16,N7=17,N8=18,N9=19,N10=20;P=dlm:,N1=11,N2=12,N3=13,N4=14,N5=15,N6=16,N7=17,N8=18,N9=19,N10=20;P=dlm:,N1=11,N2=12,N3=13,N4=14,N5=15,N6=16,N7=17,N8=18,N9=19,N10=20;P=dlm:,N1=11,N2=12,N3=13,N4=14,N5=15,N6=16,N7=17,N8=18,N9=19,N10=20;P=dlm:,N1=11,N2=12,N3=13,N4=14,N5=15,N6=16,N7=17,N8=18,N9=19,N10=20;P=dlm:,R=mybusy;P=dlm:</string>
+            </property>
+            <property name="removeParent">
+                <string>false;false;false;false;false;false;false;false;false;false;false;false;false;false;false;false</string>
+            </property>
+        </widget>
+        <zorder>caRelatedDisplay_0</zorder>
+        <zorder>caRelatedDisplay_1</zorder>
+        <zorder>caRelatedDisplay_2</zorder>
+        <zorder>caRelatedDisplay_3</zorder>
+        <zorder>caRelatedDisplay_4</zorder>
+    </widget>
+</widget>
+</ui>

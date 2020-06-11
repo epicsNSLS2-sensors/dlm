@@ -1,0 +1,345 @@
+record(asyn,"$(P)$(Q)asyn")
+{
+    field(DTYP,"asynRecordDevice")
+    field(PORT,"$(PORT)")
+    field(ADDR,"0")
+    field(OMAX,"0")
+    field(IMAX,"$(NB)")
+}
+
+# a (ushort):		waveform data from scope
+# b (short):		bytes per value
+# vala (short):		waveform data as epicsInt16
+
+record(aSub, "$(P)$(Q)aSub") {
+	field(SNAM, "dlm")
+	field(FTA, "CHAR")
+ 	field(NOA, "$(NB)")
+	field(INPA, "$(P)$(Q)asyn.BINP")
+	field(FTB, "SHORT")
+	field(FTVA, "SHORT")
+ 	field(NOVA, "$(N)")
+	field(PREC, "3")
+	#field(FLNK, "$(P)$(Q)acalc")
+}
+record(acalcout, "$(P)$(Q)acalc1") {
+	# a is range, written by python macro
+	# b is offset, written by python macro
+	# c is divisor, written by python macro
+	# d is trigger edge (0:falling edge; 1:rising edge)
+	field(PREC, "3")
+	field(CALC, "aa:=aa*a/c+b;bb:=deriv(nsmoo(aa,3))*(d?1:-1);aa")
+	field(NELM, "$(N)")
+	field(NUSE, "$(N)")
+	field(INAA, "$(P)$(Q)aSub.VALA")
+}
+
+record(acalcout, "$(P)$(Q)acalc2") {
+	# a is range, written by python macro
+	# b is offset, written by python macro
+	# c is divisor, written by python macro
+	field(PREC, "3")
+	field(CALC, "aa*a/c+b")
+	field(NELM, "$(N)")
+	field(NUSE, "$(N)")
+	field(INAA, "$(P)$(Q)aSub.VALA")
+}
+
+record(acalcout, "$(P)$(Q)acalc3") {
+	# a is range, written by python macro
+	# b is offset, written by python macro
+	# c is divisor, written by python macro
+	field(PREC, "3")
+	field(CALC, "aa*a/c+b")
+	field(NELM, "$(N)")
+	field(NUSE, "$(N)")
+	field(INAA, "$(P)$(Q)aSub.VALA")
+}
+
+record(acalcout, "$(P)$(Q)acalc4") {
+	# a is range, written by python macro
+	# b is offset, written by python macro
+	# c is divisor, written by python macro
+	field(PREC, "3")
+	field(CALC, "aa*a/c+b")
+	field(NELM, "$(N)")
+	field(NUSE, "$(N)")
+	field(INAA, "$(P)$(Q)aSub.VALA")
+}
+record(acalcout, "$(P)$(Q)acalcDebug") {
+	field(PREC, "3")
+	field(CALC, "")
+	field(NELM, "$(N)")
+	field(NUSE, "$(N)")
+	field(INAA, "")
+}
+record(acalcout, "$(P)$(Q)acalcTime") {
+	# a is sampleRate, written by python macro
+	field(PREC, "3")
+	field(CALC, "(ix/a)*1e6")
+	field(NELM, "$(N)")
+	field(NUSE, "$(N)")
+}
+record(acalcout, "$(P)$(Q)acalcSyncVoltage") {
+	# a is sampleRate, written by python macro
+	field(PREC, "3")
+	field(INPA, "$(P)$(Q)sumSub.VALE CP")
+	field(CALC, "a")
+	field(NELM, "$(N)")
+	field(NUSE, "$(N)")
+}
+
+# a (double):		array of trace 1 (sync)
+# b (double):		array of trace 2
+# c (double):		array of trace 3
+# d (double):		number of array elements (data points acquired) from MCS
+# e (int): 			number of array elements
+# f (int): 			number of times this bin has been added to
+# g (double):		trigger voltage
+# h (int):			nBins
+# i (int):			erase
+# j (int):			numScopeAvg
+
+# k (int):			sampleCriterion
+# l (double):		sampleThreshold
+# m (int):			sampleIxLow
+# n (int):			sampleIxHigh
+
+# o (int):			histogram off/on
+# p (int):			histNumVoltBins
+# q (double):		histVoltsLow
+# r (double):		histVoltsLowHigh
+
+# vala (double):	summed trace 2
+# valb (double):	summed trace 3
+# valc (double):	summed trace 4
+# vald (int):		number of summed array elements
+# vale (double):	syncVoltage
+# valf (double):	work 2
+# valg (double):	work 3
+# valh (double):	work 4
+# vali (int):		numSamples
+
+# valj (short):		trace2Hist
+# valk (short):		trace3Hist
+# vall (short):		trace4Hist
+
+record(aSub, "$(P)$(Q)sumSub") {
+	field(SNAM, "dlmSum")
+	field(FTA, "DOUBLE")
+ 	field(NOA, "$(N)")
+	field(INPA, "$(P)$(Q)acalc1.BB")
+	field(FTB, "DOUBLE")
+ 	field(NOB, "$(N)")
+	field(INPB, "$(P)$(Q)acalc2.AVAL")
+	field(FTC, "DOUBLE")
+ 	field(NOC, "$(N)")
+	field(INPC, "$(P)$(Q)acalc3.AVAL")
+	field(FTD, "DOUBLE")
+ 	field(NOD, "$(N)")
+	field(INPD, "$(P)$(Q)acalc4.AVAL")
+	field(FTE, "LONG")
+ 	field(NOE, "1")
+	field(INPE, "$(P)$(Q)acalc1.NUSE")
+
+	field(FTF, "LONG")
+ 	field(NOF, "$(NW)")
+	field(FTG, "DOUBLE")
+
+	field(FTH, "LONG")
+ 	field(NOH, "1")
+	field(INPH, "$(P)$(Q)nBins")
+	field(FTI, "LONG")
+ 	field(NOI, "1")
+	field(INPI, "$(P)$(Q)eraseSums")
+
+	field(FTJ, "LONG")
+ 	field(NOJ, "1")
+	field(INPJ, "$(P)$(Q)numScopeAvg")
+
+	field(FTK, "LONG")
+ 	field(NOK, "1")
+	field(INPK, "$(P)$(Q)sampleCriterion")
+	field(FTL, "DOUBLE")
+ 	field(NOL, "1")
+	field(INPL, "$(P)$(Q)sampleThreshold")
+	field(FTM, "LONG")
+ 	field(NOM, "1")
+	field(INPM, "$(P)$(Q)sampleIxLow")
+	field(FTN, "LONG")
+ 	field(NON, "1")
+	field(INPN, "$(P)$(Q)sampleIxHigh")
+
+	field(FTO, "LONG")
+ 	field(NOO, "1")
+	field(INPO, "$(P)$(Q)histogram")
+	field(FTP, "LONG")
+ 	field(NOP, "1")
+	field(INPP, "$(P)$(Q)histNumVoltBins")
+	field(FTQ, "DOUBLE")
+ 	field(NOQ, "1")
+	field(INPQ, "$(P)$(Q)histVoltsLow")
+	field(FTR, "DOUBLE")
+ 	field(NOR, "1")
+	field(INPR, "$(P)$(Q)histVoltsHigh")
+
+	field(FTVA, "DOUBLE")
+ 	field(NOVA, "$(NW)")
+	field(FTVB, "DOUBLE")
+ 	field(NOVB, "$(NW)")
+	field(FTVC, "DOUBLE")
+ 	field(NOVC, "$(NW)")
+	field(FTVD, "LONG")
+	field(OUTD, "$(P)$(Q)fanSumElements PP")
+	field(FTVE, "DOUBLE")
+	field(PREC, "3")
+
+	field(FTVF, "DOUBLE")
+ 	field(NOVF, "$(NW)")
+	field(FTVG, "DOUBLE")
+ 	field(NOVG, "$(NW)")
+	field(FTVH, "DOUBLE")
+ 	field(NOVH, "$(NW)")
+
+	field(FTVI, "LONG")
+ 	field(NOVI, "1")
+	field(OUTI, "$(P)$(Q)numSamples PP")
+
+	field(FTVJ, "SHORT")
+ 	field(NOVJ, "$(NH)")
+	field(OUTJ, "$(P)$(Q)trace2Hist PP")
+	field(FTVK, "SHORT")
+ 	field(NOVK, "$(NH)")
+	field(OUTK, "$(P)$(Q)trace3Hist PP")
+	field(FTVL, "SHORT")
+ 	field(NOVL, "$(NH)")
+	field(OUTL, "$(P)$(Q)trace4Hist PP")
+}
+record(dfanout, "$(P)$(Q)fanSumElements") {
+	field(OUTA, "$(P)$(Q)acalcSum2.NUSE")
+	field(OUTB, "$(P)$(Q)acalcSum3.NUSE")
+	field(OUTC, "$(P)$(Q)acalcSum4.NUSE")
+	field(OUTD, "$(P)$(Q)nSumElements PP")
+}
+# if .A==0, BB is empty
+record(acalcout, "$(P)$(Q)acalcSum2") {
+	field(CALC, "bb:=(a?(bb+aa)/2:aa);bb")
+	field(NELM, "$(NW)")
+	field(NUSE, "$(NW)")
+	field(INAA, "$(P)$(Q)sumSub.VALA")
+	#field(FLNK, "$(P)$(Q)acalcSum3")
+}
+
+record(acalcout, "$(P)$(Q)acalcSum3") {
+	field(CALC, "bb:=(a?(bb+aa)/2:aa);bb")
+	field(NELM, "$(NW)")
+	field(NUSE, "$(NW)")
+	field(INAA, "$(P)$(Q)sumSub.VALB")
+	#field(FLNK, "$(P)$(Q)acalcSum4")
+}
+
+record(acalcout, "$(P)$(Q)acalcSum4") {
+	field(CALC, "bb:=(a?(bb+aa)/2:aa);bb")
+	field(NELM, "$(NW)")
+	field(NUSE, "$(NW)")
+	field(INAA, "$(P)$(Q)sumSub.VALC")
+}
+
+# misc scope parameters
+record(ao, "$(P)$(Q)scopeCh1VoltsPerDiv") {
+	field(PREC, "3")
+}
+record(ao, "$(P)$(Q)scopeCh2VoltsPerDiv") {
+	field(PREC, "3")
+}
+record(ao, "$(P)$(Q)scopeCh3VoltsPerDiv") {
+	field(PREC, "3")
+}
+record(ao, "$(P)$(Q)scopeCh4VoltsPerDiv") {
+	field(PREC, "3")
+}
+record(ao, "$(P)$(Q)scopeSampleRate") {
+	field(PREC, "3")
+}
+record(ao, "$(P)$(Q)scopeTriggerLevel") {
+	field(PREC, "3")
+}
+record(bo, "$(P)$(Q)scopeTriggerSlope") {
+	field(ZNAM, "FALL")
+	field(ONAM, "RISE")
+}
+record(ao, "$(P)$(Q)scopeTimePerDiv") {
+	field(PREC, "3")
+}
+record(longout, "$(P)$(Q)numSweeps") {
+}
+record(longout, "$(P)$(Q)currSweep") {
+}
+record(ao, "$(P)$(Q)dataAcqTime") {
+	field(PREC, "3")
+}
+record(ao, "$(P)$(Q)totalTime") {
+	field(PREC, "3")
+}
+record(longout, "$(P)$(Q)actualNumAvg") {
+}
+record(longout, "$(P)$(Q)nSumElements") {
+}
+record(ao, "$(P)$(Q)trigPlots") {
+	field(MDEL, "-1")
+}
+record(longout, "$(P)$(Q)nBins") {
+	field(DOL, "20")
+}
+record(longout, "$(P)$(Q)eraseSums") {
+}
+record(longout, "$(P)$(Q)numScopeAvg") {
+}
+record(longout, "$(P)$(Q)numSamples") {
+}
+
+# we may not want to include all samples (sync pulses), but instead only
+# those that contain signals above some threshold in some index range
+record(bo, "$(P)$(Q)sampleCriterion") {
+	field(ZNAM, "All")
+	field(ONAM, "Threshold")
+}
+record(ao, "$(P)$(Q)sampleThreshold") {
+	field(PREC, "3")
+}
+record(longout, "$(P)$(Q)sampleIxLow") {
+}
+record(longout, "$(P)$(Q)sampleIxHigh") {
+}
+
+# histogramming time/voltage
+record(bo, "$(P)$(Q)histogram") {
+	field(ZNAM, "Off")
+	field(ONAM, "On")
+}
+record(longout, "$(P)$(Q)histNumVoltBins") {
+}
+record(ao, "$(P)$(Q)histVoltsLow") {
+	field(PREC, "3")
+}
+record(ao, "$(P)$(Q)histVoltsHigh") {
+	field(PREC, "3")
+}
+record(waveform, "$(P)$(Q)trace2Hist") {
+	field (FTVL, "SHORT")
+	field (NELM, "$(NH)")
+}
+record(waveform, "$(P)$(Q)trace3Hist") {
+	field (FTVL, "SHORT")
+	field (NELM, "$(NH)")
+}
+record(waveform, "$(P)$(Q)trace4Hist") {
+	field (FTVL, "SHORT")
+	field (NELM, "$(NH)")
+}
+record(longout, "$(P)$(Q)histBPP") {
+	field(DOL, "2")
+}
+record(longout, "$(P)$(Q)histCODE") {
+	field(DOL, "1")
+}

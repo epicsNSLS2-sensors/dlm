@@ -1,0 +1,59 @@
+#FILENAME:      RELEASE
+#USAGE:         Specify directory paths to synApps support modules
+#Version:       $Revision: 19158 $
+#Modified By:   $Author: mooney $
+#Last Modified: $Date: 2015-03-19 15:44:13 -0500 (Thu, 19 Mar 2015) $
+#HeadURL:       $URL: https://subversion.xray.aps.anl.gov/synApps/configure/tags/synApps_5_8/RELEASE $
+
+#NOTES
+#     - To remove modules from the build, delete or comment out the
+#       module name.
+#     - Refer to the "MODULE_LIST" in <synApps>/configure/Makefile 
+#       for the inter-dependencies of the different modules.
+
+SUPPORT=/usr/local/epics/synApps_5_8/support
+EPICS_BASE=/usr/local/epics/base-3.14.12.6
+
+#/usr/local/iocapps/cvsroot/modules/bus/allenBradley
+#ALIVE=$(SUPPORT)/alive-1-0
+#ALLEN_BRADLEY=$(SUPPORT)/allenBradley-2-3
+#AREA_DETECTOR=$(SUPPORT)/areaDetector-R2-0
+#ADCORE=$(AREA_DETECTOR)/ADCore-R2-2
+#ADBINARIES=$(AREA_DETECTOR)/ADBinaries-R2-2
+#ASDSTD=$(SUPPORT)/asdStd-3-17-asd1
+#https://svn.aps.anl.gov/epics/asyn/
+ASYN=$(SUPPORT)/asyn-4-26
+AUTOSAVE=$(SUPPORT)/autosave-5-6-1
+BUSY=$(SUPPORT)/busy-1-6-1
+CALC=$(SUPPORT)/calc-3-6
+#CAMAC=$(SUPPORT)/camac-2-7
+CAPUTRECORDER=$(SUPPORT)/caputRecorder-1-4-2
+#DAC128V=$(SUPPORT)/dac128V-2-8
+#DELAYGEN=$(SUPPORT)/delaygen-1-1-1
+#http://www.slac.stanford.edu/grp/cd/soft/epics/site/devIocStats/
+DEVIOCSTATS=$(SUPPORT)/devIocStats-3-1-13
+#DXP=$(SUPPORT)/dxp-3-4
+#IP=$(SUPPORT)/ip-2-17
+#IP330=$(SUPPORT)/ip330-2-8
+#https://svn.aps.anl.gov/epics/ipac/
+#IPAC=$(SUPPORT)/ipac-2-13
+#IPUNIDIG=$(SUPPORT)/ipUnidig-2-10
+#LOVE=$(SUPPORT)/love-3-2-5
+#MCA=$(SUPPORT)/mca-7-6
+#MEASCOMP=$(SUPPORT)/measComp-1-1
+#MODBUS=$(SUPPORT)/modbus-2-7
+#MOTOR=$(SUPPORT)/motor-6-9
+#OPTICS=$(SUPPORT)/optics-2-9-3
+#QUADEM=$(SUPPORT)/quadEM-5-0
+#http://www-csr.bessy.de/control/SoftDist/sequencer
+#SNCSEQ=$(SUPPORT)/seq-2-1-18
+SNCSEQ=$(SUPPORT)/seq-2-2-1
+#SOFTGLUE=$(SUPPORT)/softGlue-2-4-3
+SSCAN=$(SUPPORT)/sscan-2-10-1
+STD=$(SUPPORT)/std-3-4
+#http://epics.web.psi.ch/software/streamdevice/
+#STREAM=$(SUPPORT)/stream-2-6a
+#VAC=$(SUPPORT)/vac-1-5-1
+#VME=$(SUPPORT)/vme-2-8-2
+#XXX=$(SUPPORT)/xxx-5-8-3
+
